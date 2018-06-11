@@ -5,6 +5,6 @@ Start-Process winword.exe C:\Users\IEUser\Downloads\malicious_documents_samples\
 
 Add-Type -AssemblyName System.Windows.Forms
 $screen = [System.Windows.Forms.SystemInformation]::VirtualScreen
-[Windows.Forms.Cursor]::Position = "$($screen.Width),$($screen.Height)"
+[Windows.Forms.Cursor]::Position = "$($screen.Width/2),$($screen.Height/2)"
 
 Write-Output "Goodbye World -- remote execution complete"
