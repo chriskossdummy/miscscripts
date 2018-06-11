@@ -62,9 +62,11 @@ public static void LeftClickAtPoint(int x, int y)
 Add-Type -TypeDefinition $cSource -ReferencedAssemblies System.Windows.Forms,System.Drawing
 #Send a click at a specified point
 Start-Sleep -Seconds 2
+# 'Enable Editing'
 [Clicker]::LeftClickAtPoint(900,80)
 Start-Sleep -Seconds 2
-[Clicker]::LeftClickAtPoint(300,160)
+# 'Enable Content'
+[Clicker]::LeftClickAtPoint(400,165)
 
 
 #Add-Type -AssemblyName System.Windows.Forms
